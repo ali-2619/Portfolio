@@ -13,22 +13,22 @@ const Contact = () => {
         </div>
 
         <div className='flex justify-center items-center'>
-          <form action="" className='flex flex-col w-full md:w-1/2'>
+          <form method='POST' action="https://getform.io/f/68d4bcf6-7104-49c0-81c4-d4b5605b8ef2" className='flex flex-col w-full md:w-1/2'>
             <input 
              type="text"
              name="name" 
-             id="Enter you name" 
+             placeholder="Enter you name" 
              className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' 
              />
 
             <input 
              type="text"
              name="email" 
-             id="Enter your Email" 
-             className='p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' 
+             placeholder="Enter your Email" 
+             className='p-2 bg-transparent my-2 border-2 rounded-md text-white focus:outline-none' 
              />
               
-              <textarea name="messege" rows="10" className='p-2 bg-transparent rounded-md text-white border-2 focus:outline-none'>
+              <textarea name="messege" placeholder="Messege"  rows="10" className='p-2 bg-transparent rounded-md text-white border-2 focus:outline-none'>
 
               </textarea>
 

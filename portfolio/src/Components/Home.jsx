@@ -1,5 +1,6 @@
 import React from 'react'
 import{MdKeyboardArrowRight} from "react-icons/md"
+import { Link } from 'react-scroll' 
 const Home = () => {
   return (
     <div name="home" className='h-screen w-full bg-gradient-to-b from-black to-gray-800 '>
@@ -21,13 +22,16 @@ const Home = () => {
             <p className='text-[#8892b0] py-4 max-w-[700px]'>
             I have 2 Years of Experience building and Designing
             software. Currently, I love to work on web application
-            using technologies like React , Tailwant , Vue Js and Laravel.
+            using technologies like React , Tailwind , Vue Js and Laravel.
             </p>
 
             <div >
-              <button className=' text-white group cursor-pointer  px-6 py-3  my-2
+              <button  className=' text-white group cursor-pointer  px-6 py-3  my-2
                    flex items-center hover:bg-gradient-to-r from-indigo-400 to-indigo-900
-                    border-2 rounded-md '>Portfolio
+                    border-2 rounded-md '>
+                      <Link  to="experience"smooth duration={500} >
+                    Experience
+                    </Link>
                 <span className='group-hover:rotate-90 duration-200'>
                      <MdKeyboardArrowRight/>
                 </span>
